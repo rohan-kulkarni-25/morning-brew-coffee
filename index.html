@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Brew Coffee Shop</title>
+    <style>
+        :root {
+            --coffee-dark: #3A2618;
+            --coffee-medium: #6F4E37;
+            --coffee-light: #B28C6E;
+            --cream: #F5E8C7;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--cream);
+            color: var(--coffee-dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--coffee-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .logo-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .primary-logo {
+            width: 100%;
+            height: auto;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://v3.fal.media/files/rabbit/MGPb_LaDFhL7DDyQknXTy_image.svg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        section {
+            padding: 4rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--coffee-medium);
+        }
+        
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .menu-section {
+            background-color: var(--cream);
+        }
+        
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .product-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            margin-bottom: 0.5rem;
+            color: var(--coffee-medium);
+        }
+        
+        .contact {
+            background-color: var(--coffee-medium);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: var(--cream);
+        }
+        
+        .social-icons {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background-color: var(--cream);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+            background-color: var(--coffee-light);
+        }
+        
+        .qr-code-container {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .qr-code {
+            width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--coffee-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://v3.fal.media/files/rabbit/0XBpCn-cJy4nqv-FHuzp-_image.svg" alt="Morning Brew Coffee Shop Logo" class="primary-logo">
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Premium Coffee Experience</h1>
+        <p>Wake up to the perfect brew, crafted just for you</p>
+    </div>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Morning Brew Coffee Shop was born from a passion for exceptional coffee and a commitment to creating a warm, inviting space for our community. We source our beans ethically from small-scale farmers around the world, ensuring each cup tells a unique story.</p>
+                    <p>Our skilled baristas are dedicated to the craft of coffee-making, turning each order into a masterpiece that delights the senses. Whether you're grabbing a quick espresso on your way to work or settling in for a leisurely afternoon with our signature blends, we promise an unforgettable experience.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://v3.fal.media/files/penguin/zwqFFlxZaIBqOCh0cTqPt_image.svg" alt="Coffee Shop Interior" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://v3.fal.media/files/koala/4bqrgvXY5S2G637X9B9Gm_image.svg" alt="Branded Coffee Cup" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Signature Blends</h3>
+                        <p>Experience our house specialties, carefully crafted and roasted to perfection.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://v3.fal.media/files/elephant/VULAETcmKRv09UCRgPtyH_image.svg" alt="Coffee Packaging" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Retail Coffee</h3>
+                        <p>Take the Morning Brew experience home with our packaged beans and grounds.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://v3.fal.media/files/rabbit/LcSxx-8vceBKz5UWrVWva_image.svg" alt="Menu Board" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Full Menu</h3>
+                        <p>Browse our extensive menu of coffee drinks, pastries, and light meals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us Today</h2>
+            <p>123 Coffee Avenue, Brewville, BC 98765</p>
+            <p>Open daily from 6:00 AM - 8:00 PM</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: hello@morningbrew.coffee</p>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="qr-code-container">
+                <img src="https://mb-s3.blr1.digitaloceanspaces.com/qr-code/qr-d6c08cca-1649-4594-800a-c4b5599fbc4a.svg" alt="QR Code" class="qr-code">
+                <p>Scan to visit our website</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Morning Brew Coffee Shop. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color: #B28C6E;"></i> by Bhindi</p>
+    </footer>
+</body>
+</html>
